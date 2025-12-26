@@ -4,3 +4,18 @@
 page > top > top-kv
 ------------------------------
 */
+.top-kv {
+  background-image: url(../img/top/kv/kv-image-sp.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  @include g.mq() {
+    background-image: url(../img/top/kv/kv-image-pc.jpg);
+    height: 800px;
+  }
+}
