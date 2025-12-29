@@ -7,14 +7,23 @@ component > title
 .c-title {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 8rem;
+}
+
+.c-title--row {
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .c-title-en {
-  font-size: 40px;
+  font-size: 40rem;
   line-height: normal;
   font-family: var(--font-family-en);
   color: var(--text-primary);
+}
+
+.c-title-en--small {
+  font-size: 20rem;
 }
 
 .c-title-jp {
@@ -22,6 +31,6 @@ component > title
   color: var(--text-light-base);
 
   @include g.mq() {
-    font-size: 15px;
+    font-size: 15rem;
   }
 }
