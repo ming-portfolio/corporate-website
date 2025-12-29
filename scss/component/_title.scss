@@ -26,6 +26,10 @@ component > title
   font-size: 20rem;
 }
 
+.c-title-en--white {
+  color: var(--text-white);
+}
+
 .c-title-jp {
   line-height: normal;
   color: var(--text-light-base);
@@ -33,4 +37,8 @@ component > title
   @include g.mq() {
     font-size: 15rem;
   }
+}
+
+.c-title-jp--white {
+  color: var(--text-white);
 }

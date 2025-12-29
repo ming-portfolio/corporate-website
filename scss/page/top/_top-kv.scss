@@ -12,15 +12,15 @@ page > top > top-kv
   @include g.mq() {
     height: 800rem;
   }
-}
 
-.splide__slide img {
-  width: 100%;
-  height: 680rem;
-  object-fit: cover;
+  & .splide__slide img {
+    width: 100%;
+    height: 680rem;
+    object-fit: cover;
 
-  @include g.mq() {
-    height: 800rem;
+    @include g.mq() {
+      height: 800rem;
+    }
   }
 }
 

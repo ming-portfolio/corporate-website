@@ -230,9 +230,6 @@ layout > header
 }
 
 .l-header-item-link--business {
-  pointer-events: none;
-  cursor: default;
-
   @include g.mq() {
     display: flex;
     align-items: center;
@@ -293,6 +290,11 @@ layout > header
     border-radius: 16rem;
     padding: 24rem 8rem;
     white-space: nowrap;
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 }
 
@@ -328,7 +330,7 @@ layout > header
     display: block;
     width: 9rem;
     height: 9rem;
-    background-image: url("../img/layout/header/header-business-detail-arrow.svg");
+    background-image: url("../img/common//button-arrow-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

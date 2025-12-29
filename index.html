@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
     <script src="js/main.js" defer></script>
 
@@ -90,11 +91,11 @@
                   </a>
                 </li>
                 <li class="l-header-item">
-                  <a href="#" class="l-header-link l-header-item-link--business">
+                  <a href="#" class="l-header-link l-header-item-link--business js-header-item-link">
                     <span class="l-header-item-link-en">BUSINESS</span>
                     事業紹介
                   </a>
-                  <ul class="l-header-business-detail">
+                  <ul class="l-header-business-detail js-header-business-detail">
                     <li class="l-header-business-detail-item">
                       <a href="business/design.html" class="l-header-business-detail-link"> 特殊ボルトナットの設計・製造 </a>
                     </li>
@@ -205,6 +206,7 @@
         </section>
         <!-- end top-news -->
 
+        <!-- top-business -->
         <section class="top-business l-container">
           <div class="top-business-inner">
             <div class="top-business-image">
@@ -245,6 +247,65 @@
             </picture>
           </div>
         </section>
+        <!-- end top-business -->
+
+        <!-- top-product -->
+        <section class="top-product">
+          <div class="c-title c-title--row">
+            <span class="c-title-en c-title-en--small c-title-en--white">PRODUCT</span>
+            <h2 class="c-title-jp c-title-jp--white">製品紹介</h2>
+          </div>
+
+          <p class="top-product-text">確かな品質と技術力</p>
+
+          <div class="top-product-splide js-top-product-splide splide">
+            <div class="top-product-about">
+              <p class="top-product-text02">高品質・高精度のボルトナットを豊富に取り揃え。<span class="u-block">産業の要として、お客様のニーズに応える製品をお届けします。</span></p>
+              <div class="splide__arrows top-product-arrow">
+                <button class="splide__arrow splide__arrow--prev"><span class="u-visually-hidden">前へ</span></button>
+                <button class="splide__arrow splide__arrow--next"><span class="u-visually-hidden">次へ</span></button>
+              </div>
+            </div>
+
+            <div class="splide__track">
+              <ul class="top-product-list splide__list">
+                <li class="top-product-item splide__slide">
+                  <a href="product-detail.html">
+                    <img src="../img/top/product/product-image.jpg" width="404" height="269" alt="タフロックⓇ 耐振動ボルト" decoding="async" class="top-product-item-image" />
+                    <div class="top-product-item-category">自動車向け</div>
+                    <h3 class="top-product-item-title">タフロック&reg; 耐振動ボルト</h3>
+                  </a>
+                </li>
+                <li class="top-product-item splide__slide">
+                  <a href="product-detail.html">
+                    <img src="../img/top/product/product-image02.jpg" width="404" height="269" alt="エコファステンⓇ 軽量化ネジ" decoding="async" class="top-product-item-image" />
+                    <div class="top-product-item-category">電子機器向け</div>
+                    <h3 class="top-product-item-title">エコファステン&reg; 軽量化ネジ</h3>
+                  </a>
+                </li>
+                <li class="top-product-item splide__slide">
+                  <a href="product-detail.html">
+                    <img src="../img/top/product/product-image03.jpg" width="404" height="269" alt="エバイオグリップⓇ 医療用精密ネジ" decoding="async" class="top-product-item-image" />
+                    <div class="top-product-item-category">医療機器向け</div>
+                    <h3 class="top-product-item-title">バイオグリップ&reg; 医療用精密ネジ</h3>
+                  </a>
+                </li>
+                <li class="top-product-item splide__slide">
+                  <a href="product-detail.html">
+                    <img src="../img/top/product/product-image04.jpg" width="404" height="269" alt="サンダーロックⓇ 高耐食ボルト" decoding="async" class="top-product-item-image" />
+                    <div class="top-product-item-category">自動車向け</div>
+                    <h3 class="top-product-item-title">サンダーロック&reg; 高耐食ボルト</h3>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="top-product-button">
+            <a href="product.html" class="top-product-button-link">VIEW MORE</a>
+          </div>
+        </section>
+        <!-- end top-business -->
       </main>
     </div>
   </body>

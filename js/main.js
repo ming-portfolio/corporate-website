@@ -22,6 +22,36 @@ switchViewport();
 window.addEventListener("resize", switchViewport);
 
 /**
+ * ヘッダー：事業紹介ドロップダウンの制御
+ */
+const initializeHeaderDropdown = () => {
+  document.addEventListener("DOMContentLoaded", function () {
+    const item = document.querySelector(".js-header-business-detail");
+    const link = document.querySelector(".js-header-item-link");
+
+    // コンソールで取得できているか確認（デバッグ用）
+    console.log("Target item:", item);
+    console.log("Target link:", link);
+
+    if (!item || !link) return;
+
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      item.classList.toggle("is-open");
+      console.log("is-open toggled:", item.classList.contains("is-open"));
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!item.contains(e.target) && e.target !== link) {
+        item.classList.remove("is-open");
+      }
+    });
+  });
+};
+initializeHeaderDropdown();
+
+/**
  * ハンバーガーメニュー
  */
 const initializeHamburgerMenu = () => {
@@ -120,3 +150,42 @@ const initializeTopMainVisual = () => {
   });
 };
 initializeTopMainVisual();
+
+/**
+ * トップページ PRODUCTスライド
+ */
+const initializeTopProductSlider = () => {
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.querySelector(".js-top-product-splide");
+
+    if (!el) return;
+
+    const splide = new Splide(el, {
+      type: "loop",
+      padding: { left: 0, right: "94rem" },
+      gap: 32,
+      perPage: 3,
+      focus: 0,
+      pagination: false,
+      arrows: true,
+
+      // AutoScrollの設定
+      autoScroll: {
+        speed: 1, // スクロール速度（数値が大きいほど速い）
+        pauseOnHover: false, // マウスホバー時に一時停止するか
+        pauseOnFocus: false, // フォーカス時に一時停止するか
+      },
+
+      breakpoints: {
+        767: {
+          perPage: 1,
+          gap: 24,
+          padding: { left: 0, right: "60rem" },
+        },
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+};
+initializeTopProductSlider();
