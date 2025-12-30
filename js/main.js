@@ -123,14 +123,39 @@ const initializeHamburgerMenu = () => {
 initializeHamburgerMenu();
 
 /**
+ * contact背景スライド
+ */
+const initializeContactBgSlider = () => {
+  document.addEventListener("DOMContentLoaded", function () {
+    const el = document.querySelector(".js-contact-bg-splide");
+    if (!el) return;
+
+    const splide = new Splide(el, {
+      type: "loop",
+      drag: false,
+      arrows: false,
+      pagination: false,
+      autoWidth: true,
+      gap: "100rem",
+      autoScroll: {
+        speed: 0.5,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+      },
+    });
+
+    splide.mount(window.splide.Extensions);
+  });
+};
+initializeContactBgSlider();
+
+/**
  * トップページKVスライド
  */
 const initializeTopMainVisual = () => {
   document.addEventListener("DOMContentLoaded", function () {
-    // スライダーの存在を確認してから実行
     const el = document.querySelector(".js-top-kv-splide");
 
-    // トップのスライドがページ内にない場合returnする
     if (!el) return;
 
     if (el) {
@@ -169,10 +194,9 @@ const initializeTopProductSlider = () => {
       pagination: false,
       arrows: true,
 
-      // AutoScrollの設定
       autoScroll: {
-        speed: 1, // スクロール速度（数値が大きいほど速い）
-        pauseOnHover: false, // マウスホバー時に一時停止するか
+        speed: 0.5, // スクロール速度（数値が大きいほど速い）
+        pauseOnHover: true, // マウスホバー時に一時停止するか
         pauseOnFocus: false, // フォーカス時に一時停止するか
       },
 

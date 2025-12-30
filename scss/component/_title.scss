@@ -15,6 +15,14 @@ component > title
   align-items: baseline;
 }
 
+.c-title--contact {
+  gap: 8rem;
+
+  @include g.mq() {
+    gap: 18rem;
+  }
+}
+
 .c-title-en {
   font-size: 40rem;
   line-height: normal;
@@ -28,6 +36,14 @@ component > title
 
 .c-title-en--white {
   color: var(--text-white);
+}
+
+.c-title-en--contact {
+  font-size: 32rem;
+
+  @include g.mq() {
+    font-size: 40rem;
+  }
 }
 
 .c-title-jp {
