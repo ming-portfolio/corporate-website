@@ -17,15 +17,23 @@ utility > utility
   margin: -1px !important;
 }
 
+.u-ptb {
+  padding: 80px 0 !important;
+
+  @include g.mq() {
+    padding: 120px 0 !important;
+  }
+}
+
 .u-block {
-  display: block;
+  display: block !important;
 }
 
 .u-sp-block {
-  display: block;
+  display: block !important;
 
   @include g.mq() {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 

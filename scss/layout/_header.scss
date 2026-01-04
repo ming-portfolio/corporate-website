@@ -20,6 +20,14 @@ layout > header
   }
 }
 
+.l-header--sub {
+  margin-top: 40rem;
+
+  @include g.mq() {
+    margin-top: 45rem;
+  }
+}
+
 .l-header-logo {
   width: 160rem;
 
@@ -180,6 +188,12 @@ layout > header
   }
 }
 
+.l-header-item--pc-black {
+  @include g.mq() {
+    color: var(--text-base);
+  }
+}
+
 .l-header-link {
   border-bottom: 1rem solid var(--border-white-20);
   padding: 20rem 16rem;
@@ -196,12 +210,19 @@ layout > header
     border-bottom: none;
     padding: 0;
     font-size: 16rem;
+    line-height: 1.9;
 
     @media (any-hover: hover) {
       &:hover {
         opacity: 0.7;
       }
     }
+  }
+}
+
+.l-header-link--pc-wide {
+  @include g.mq() {
+    margin-right: 31rem;
   }
 }
 
@@ -247,6 +268,14 @@ layout > header
       background-position: center;
       width: 9rem;
       height: 9rem;
+    }
+  }
+}
+
+.l-header-item-link--business--black {
+  &::after {
+    @include g.mq() {
+      background-image: url("../img/layout/header/header-business-arrow-black.svg");
     }
   }
 }
@@ -300,6 +329,7 @@ layout > header
 }
 
 .l-header-business-detail-item {
+  color: var(--bg-white);
   border-bottom: 1rem solid var(--border-white-20);
   font-size: 14rem;
   line-height: normal;

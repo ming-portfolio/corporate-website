@@ -44,12 +44,12 @@
   </head>
   <body>
     <div class="l-page-wrap">
-      <header class="l-header l-container">
-        <h1 class="l-header-logo">
+      <header class="l-header l-header--sub l-container">
+        <div class="l-header-logo">
           <a href="index.html">
-            <img src="img/common/logo-white.svg" width="247" height="74" alt="森下株式会社" decoding="sync" />
+            <img src="img/layout/header/header-logo-black.svg" width="247" height="74" alt="森下株式会社" decoding="sync" />
           </a>
-        </h1>
+        </div>
 
         <button class="l-header-menu-open-button js-header-menu-open-button">
           <span class="l-header-menu-open-button-line">
@@ -78,22 +78,22 @@
               </button>
             </div>
 
-            <nav class="l-header-nav">
+            <nav class="l-header-nav" aria-label="グローバルナビゲーション">
               <ul class="l-header-list">
-                <li class="l-header-item">
+                <li class="l-header-item l-header-item--pc-black">
                   <a href="index.html" class="l-header-link">
                     <span class="l-header-item-link-en l-header-item-link-en--home">HOME</span>
                     <span class="l-header-item-link-jp--home">ホーム</span>
                   </a>
                 </li>
-                <li class="l-header-item">
+                <li class="l-header-item l-header-item--pc-black">
                   <a href="company.html" class="l-header-link">
                     <span class="l-header-item-link-en">COMPANY</span>
                     会社概要
                   </a>
                 </li>
-                <li class="l-header-item">
-                  <a href="#" class="l-header-link l-header-item-link--business js-header-item-link">
+                <li class="l-header-item l-header-item--pc-black">
+                  <a href="#" class="l-header-link l-header-item-link--business l-header-item-link--business--black js-header-item-link">
                     <span class="l-header-item-link-en">BUSINESS</span>
                     事業紹介
                   </a>
@@ -109,14 +109,14 @@
                     </li>
                   </ul>
                 </li>
-                <li class="l-header-item">
+                <li class="l-header-item l-header-item--pc-black">
                   <a href="product.html" class="l-header-link">
                     <span class="l-header-item-link-en">PRODUCT</span>
                     製品紹介
                   </a>
                 </li>
-                <li class="l-header-item">
-                  <a href="access.html" class="l-header-link">
+                <li class="l-header-item l-header-item--pc-black">
+                  <a href="access.html" class="l-header-link l-header-link--pc-wide">
                     <span class="l-header-item-link-en">ACCESS</span>
                     アクセス
                   </a>
@@ -133,7 +133,104 @@
         </dialog>
       </header>
 
-      <main class="l-page-main"></main>
+      <main class="l-page-main">
+        <!-- page-kv -->
+        <div class="c-page-kv">
+          <div class="c-page-kv-inner l-container">
+            <div class="c-title c-title--pc-wide">
+              <span class="c-title-en c-title-en--big">COMPANY</span>
+              <h1 class="c-title-jp c-title-jp--pc-big c-title-jp--black">会社概要</h1>
+            </div>
+          </div>
+        </div>
+        <!-- end page-kv -->
+
+        <!-- breadcrumb -->
+        <nav class="c-breadcrumb l-container" aria-label="パンくずリスト">
+          <ol class="c-breadcrumb-list">
+            <li class="c-breadcrumb-item"><a href="index.html" class="c-breadcrumb-item-link">HOME</a></li>
+            <li class="c-breadcrumb-item c-breadcrumb-item--current">会社概要</li>
+          </ol>
+        </nav>
+        <!-- end breadcrumb -->
+
+        <section class="u-ptb l-container-s">
+          <picture class="company-img">
+            <source media="(max-width: 767px)" srcset="img/company/company-exterior-sp.png" />
+            <img src="img/company/company-exterior-pc.png" width="1000" height="500" alt="森下株式会社 本社外観" decoding="async" />
+          </picture>
+          <table class="c-table c-table--company">
+            <caption class="c-table-caption u-visually-hidden">
+              会社概要
+            </caption>
+            <tbody class="c-table-body">
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">会社名</th>
+                <td class="c-table-data">株式会社森下</td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">所在地</th>
+                <td class="c-table-data c-table-data--address">〒123-4567 東京都春日区青葉町2-11-7</td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">代表者</th>
+                <td class="c-table-data">森下 健一郎</td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">設立</th>
+                <td class="c-table-data">2010.04.01</td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">事業内容</th>
+                <td class="c-table-data">
+                  <ul class="c-table-list">
+                    <li class="c-table-list-item">特殊ボルトナットの設計・製造</li>
+                    <li class="c-table-list-item">特殊ボルトナットのオーダーメイド</li>
+                    <li class="c-table-list-item">ISO 9001 認証取得の品質管理</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">資本金</th>
+                <td class="c-table-data">5億円</td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">従業員数</th>
+                <td class="c-table-data">150名（2024年4月現在）</td>
+              </tr>
+              <tr class="c-table-row">
+                <th class="c-table-header" scope="row">連絡先</th>
+                <td class="c-table-data"><a href="tel:0312345678" class="c-table-link-tel">03-1234-5678</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- contact -->
+        <section class="c-contact">
+          <div class="c-contact-inner">
+            <div class="c-contact-bg-slider splide js-contact-bg-splide" aria-hidden="true">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">CONTACT US</li>
+                  <li class="splide__slide">CONTACT US</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="c-contact-circle">
+              <a href="contact.html" class="c-contact-link">
+                <div class="c-title c-title--contact">
+                  <span class="c-title-en c-title-en--white c-title-en--contact">CONTACT</span>
+                  <h2 class="c-title-jp c-title-jp--white">お問い合わせ</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- end contact -->
+      </main>
+
       <footer class="l-footer">
         <button class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
           <img src="img/layout/footer/footer-button.svg" width="80" height="80" alt="" decoding="async" />

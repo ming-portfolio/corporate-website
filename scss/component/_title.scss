@@ -10,6 +10,12 @@ component > title
   gap: 8rem;
 }
 
+.c-title--pc-wide {
+  @include g.mq() {
+    gap: 16rem;
+  }
+}
+
 .c-title--row {
   flex-direction: row;
   align-items: baseline;
@@ -28,6 +34,14 @@ component > title
   line-height: normal;
   font-family: var(--font-family-en);
   color: var(--text-primary);
+}
+
+.c-title-en--big {
+  font-size: 50rem;
+
+  @include g.mq() {
+    font-size: 72rem;
+  }
 }
 
 .c-title-en--small {
@@ -53,6 +67,16 @@ component > title
   @include g.mq() {
     font-size: 15rem;
   }
+}
+
+.c-title-jp--pc-big {
+  @include g.mq() {
+    font-size: 18rem;
+  }
+}
+
+.c-title-jp--black {
+  color: var(--text-base);
 }
 
 .c-title-jp--white {
