@@ -537,14 +537,12 @@ component > breadcrumb
   font-size: 14rem;
   line-height: normal;
   letter-spacing: 0.05em;
-}
-
-.c-breadcrumb-item-link {
+  transition: 0.3s;
   display: flex;
   align-items: center;
   gap: 16rem;
 }
-.c-breadcrumb-item-link::after {
+.c-breadcrumb-item::after {
   content: "";
   display: block;
   background-image: url("../img/common/button-arrow-blue.svg");
@@ -555,8 +553,17 @@ component > breadcrumb
   height: 9rem;
 }
 
+@media (any-hover: hover) {
+  .c-breadcrumb-item-link:hover {
+    opacity: 0.7;
+  }
+}
+
 .c-breadcrumb-item--current {
   color: var(--text-primary);
+}
+.c-breadcrumb-item--current::after {
+  display: none;
 }
 
 /*!
