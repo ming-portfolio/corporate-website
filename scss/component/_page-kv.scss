@@ -8,18 +8,58 @@ component > page-kv
   background-color: var(--bg-lightest-blue);
   height: 255rem;
   position: relative;
+
   @include g.mq() {
     height: 408rem;
   }
 }
 
-.c-page-kv-inner {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  translate: -50% -50%;
+.c-page-kv--wide {
+  height: 466rem;
 
   @include g.mq() {
-    top: 60%;
+    height: 432rem;
+  }
+}
+
+.c-page-kv-inner {
+  position: absolute;
+  top: 48%;
+
+  @include g.mq() {
+    top: 45%;
+  }
+}
+
+.c-page-kv-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 19rem;
+  top: 26%;
+  width: 90%;
+
+  @include g.mq() {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: auto;
+    top: 48%;
+    width: auto;
+  }
+}
+
+.c-page-kv-title {
+  order: 2;
+}
+
+.c-page-kv-image {
+  width: 338rem;
+  height: 169rem;
+
+  @include g.mq() {
+    margin-top: -24.5rem;
+    justify-self: end;
+    order: 2;
+    width: 484rem;
+    height: 323rem;
   }
 }

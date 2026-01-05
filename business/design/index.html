@@ -8,9 +8,9 @@
     <meta name="format-detection" content="telephone=no" />
 
     <!-- favicon/webclipicon -->
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="webclip.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/webclip.png" />
 
     <!-- ogp -->
     <meta property="og:site_name" content="森下株式会社" />
@@ -116,7 +116,7 @@
                   </a>
                 </li>
                 <li class="l-header-item">
-                  <a href="/access/" class="l-header-link l-header-link--page">
+                  <a href="/access/" class="l-header-link">
                     <span class="l-header-item-link-en">ACCESS</span>
                     アクセス
                   </a>
@@ -135,11 +135,21 @@
 
       <main class="l-page-main">
         <!-- page-kv -->
-        <div class="c-page-kv">
-          <div class="c-page-kv-inner l-container">
-            <div class="c-page-title">
-              <span class="c-page-title-en js-page-title-en">COMPANY</span>
-              <h1 class="c-page-title-jp js-page-title-jp">会社概要</h1>
+        <div class="c-page-kv c-page-kv--wide">
+          <div class="l-container">
+            <div class="c-page-kv-inner c-page-kv-row">
+              <div class="c-page-kv-title">
+                <div class="c-page-title-row">
+                  <span class="c-page-title-row-en">BUSINESS</span>
+                  <h1 class="c-page-title-row-jp">事業紹介</h1>
+                </div>
+                <p class="c-page-title-sub">特殊ボルトナットの設計・製造</p>
+              </div>
+
+              <picture class="c-page-kv-image">
+                <source media="(max-width: 767px)" srcset="/img/business/business-kv-sp.png" />
+                <img src="/img/business/business-kv-pc.png" width="484" height="323" alt="事業紹介：特殊ボルトナットの設計・製造風景" decoding="async" />
+              </picture>
             </div>
           </div>
         </div>
@@ -150,10 +160,45 @@
           <ol class="c-breadcrumb-list">
             <li class="c-breadcrumb-item"><a href="/" class="c-breadcrumb-item-link">HOME</a></li>
             <li class="c-breadcrumb-item">事業紹介</li>
-            <li class="c-breadcrumb-item c-breadcrumb-item--current">会社概要</li>
+            <li class="c-breadcrumb-item c-breadcrumb-item--current">特殊ボルトナットの設計・製造</li>
           </ol>
         </nav>
         <!-- end breadcrumb -->
+
+        <div class="business-wrapper l-container">
+          <div class="business-sidebar">
+            <div class="c-title">
+              <span class="c-title-en">MENU</span>
+              <h2 class="c-title-jp">メニュー</h2>
+            </div>
+            <ul class="business-menu-list">
+              <li class="business-menu-item">
+                <a href="#problem" class="business-menu-item-link js-business-menu-item-link">お客様の課題</a>
+              </li>
+              <li class="business-menu-item">
+                <a href="#feature" class="business-menu-item-link js-business-menu-item-link">特徴</a>
+              </li>
+              <li class="business-menu-item">
+                <a href="#flow" class="business-menu-item-link js-business-menu-item-link">納品までの流れ</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="business-main">
+            <section class="c-title js-scroll-section" id="problem">
+              <span class="c-title-en">MENU</span>
+              <h2 class="c-title-jp">メニュー</h2>
+            </section>
+            <section class="c-title js-scroll-section" id="feature">
+              <span class="c-title-en">MENU</span>
+              <h2 class="c-title-jp">メニュー</h2>
+            </section>
+            <section class="c-title js-scroll-section" id="flow">
+              <span class="c-title-en">MENU</span>
+              <h2 class="c-title-jp">メニュー</h2>
+            </section>
+          </div>
+        </div>
 
         <!-- contact -->
         <section class="c-contact">

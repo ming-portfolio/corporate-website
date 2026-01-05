@@ -88,3 +88,43 @@ component > title
     font-size: 18rem;
   }
 }
+
+.c-page-title-row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8rem;
+}
+
+.c-page-title-row-en {
+  font-size: 20rem;
+  line-height: normal;
+  font-family: var(--font-family-en);
+  color: var(--text-primary);
+
+  @include g.mq() {
+    font-size: 24rem;
+  }
+}
+
+.c-page-title-row-jp {
+  line-height: normal;
+  color: var(--text-light-base);
+
+  @include g.mq() {
+    font-size: 18rem;
+  }
+}
+
+.c-page-title-sub {
+  font-size: 28rem;
+  line-height: normal;
+  letter-spacing: 0.05em;
+  margin-top: 12rem;
+  font-weight: 500;
+
+  @include g.mq() {
+    font-size: 44rem;
+    margin-top: 16rem;
+  }
+}

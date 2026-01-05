@@ -1,0 +1,67 @@
+@use "../../global" as g;
+
+/*!
+page > business > business-contents
+------------------------------
+*/
+
+.business-wrapper {
+  margin-top: 80rem;
+
+  @include g.mq() {
+    display: grid;
+    grid-template-columns: 240rem 1fr;
+    margin-top: 149.5rem;
+    gap: 155rem;
+  }
+}
+
+.business-sidebar {
+  display: none;
+
+  @include g.mq() {
+    display: block;
+  }
+}
+
+.business-menu-list {
+  @include g.mq() {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+    margin-top: 32rem;
+  }
+}
+
+.business-menu-item {
+  @include g.mq() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 9rem;
+      height: 9rem;
+      background-image: url("../img/common/button-arrow-blue.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.business-menu-item-link {
+  @include g.mq() {
+    color: var(--text-base);
+    font-size: 16rem;
+    line-height: 1.5;
+    opacity: 0.5;
+    transition: color 0.3s;
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+}
