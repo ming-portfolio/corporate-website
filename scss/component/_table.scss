@@ -17,14 +17,14 @@ component > table
 }
 
 .c-table-body {
-  border-bottom: 1rem solid var(--bg-table);
+  border-bottom: 1rem solid var(--border-table);
 }
 
 .c-table-row {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
-  border-top: 1rem solid var(--bg-table);
+  border-top: 1rem solid var(--border-table);
   padding: 24rem 0 23rem 0;
 
   @include g.mq() {
@@ -40,14 +40,14 @@ component > table
   line-height: 1.45;
 
   @include g.mq() {
-    border-top: 1rem solid var(--bg-table);
+    border-top: 1rem solid var(--border-table);
     padding: 32rem 0;
   }
 }
 
 .c-table-data {
   @include g.mq() {
-    border-top: 1rem solid var(--bg-table);
+    border-top: 1rem solid var(--border-table);
     padding: 31rem 0;
   }
 }

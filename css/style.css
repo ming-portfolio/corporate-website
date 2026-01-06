@@ -20,7 +20,8 @@ global > color
   --border-white-20: rgb(255 255 255 / 0.2);
   --bg-contact: linear-gradient(180deg, #0772d1 0%, #254da0 100%);
   --bg-contact-hover: linear-gradient(180deg, #254da0 0%, #0772d1 100%);
-  --bg-table: #ebebeb;
+  --border-table: #ebebeb;
+  --border-product-item: #dcdcdc;
 }
 
 /*!
@@ -667,14 +668,14 @@ component > table
 }
 
 .c-table-body {
-  border-bottom: 1rem solid var(--bg-table);
+  border-bottom: 1rem solid var(--border-table);
 }
 
 .c-table-row {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
-  border-top: 1rem solid var(--bg-table);
+  border-top: 1rem solid var(--border-table);
   padding: 24rem 0 23rem 0;
 }
 @media screen and (min-width: 768px) {
@@ -692,14 +693,14 @@ component > table
 }
 @media screen and (min-width: 768px) {
   .c-table-header {
-    border-top: 1rem solid var(--bg-table);
+    border-top: 1rem solid var(--border-table);
     padding: 32rem 0;
   }
 }
 
 @media screen and (min-width: 768px) {
   .c-table-data {
-    border-top: 1rem solid var(--bg-table);
+    border-top: 1rem solid var(--border-table);
     padding: 31rem 0;
   }
 }
@@ -725,6 +726,84 @@ component > table
 @media (any-hover: hover) {
   .c-table-link-tel:hover {
     opacity: 0.7;
+  }
+}
+
+/*!
+component > post-product
+------------------------------
+*/
+@media screen and (min-width: 768px) and (any-hover: hover) {
+  .c-post-product a:hover img {
+    scale: 1.02;
+  }
+}
+
+.c-post-product-image {
+  aspect-ratio: 300/200;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 0 0 32rem;
+  overflow: hidden;
+  transition: scale 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .c-post-product-image {
+    aspect-ratio: 404/269;
+  }
+}
+
+.c-post-product-image--list {
+  border: 1px solid var(--border-product-item);
+}
+
+.c-post-product-category {
+  margin-top: 16rem;
+  border: 1rem solid var(--text-white);
+  padding: 1rem 7rem;
+  font-size: 16rem;
+  line-height: 1.5;
+  border-radius: 16rem;
+  display: inline-block;
+}
+
+.c-post-product-category--list {
+  margin-top: 8rem;
+  border: 1rem solid var(--text-base);
+  font-size: 13rem;
+  line-height: 1.45;
+}
+@media screen and (min-width: 768px) {
+  .c-post-product-category--list {
+    margin-top: 16rem;
+    font-size: 16rem;
+    line-height: 1.5;
+  }
+}
+
+.c-post-product-title {
+  margin-top: 8rem;
+  font-size: 18rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+}
+@media screen and (min-width: 768px) {
+  .c-post-product-title {
+    font-size: 20rem;
+  }
+}
+
+.c-post-product-title-list {
+  margin-top: 4rem;
+  font-size: 15rem;
+  line-height: 1.45;
+}
+@media screen and (min-width: 768px) {
+  .c-post-product-title-list {
+    margin-top: 8rem;
+    font-size: 20rem;
+    line-height: 1.45;
+    letter-spacing: 0.05em;
   }
 }
 
@@ -1791,48 +1870,6 @@ page > top > top-product
   color: var(--text-white);
 }
 
-@media screen and (min-width: 768px) and (any-hover: hover) {
-  .top-product-item a:hover img {
-    scale: 1.02;
-  }
-}
-
-.top-product-item-image {
-  aspect-ratio: 300/200;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 0 0 0 32rem;
-  overflow: hidden;
-  transition: scale 0.3s;
-}
-@media screen and (min-width: 768px) {
-  .top-product-item-image {
-    aspect-ratio: 404/269;
-  }
-}
-
-.top-product-item-category {
-  margin-top: 16rem;
-  border: 1rem solid var(--text-white);
-  padding: 1rem 7rem;
-  font-size: 16rem;
-  line-height: 1.5;
-  border-radius: 16rem;
-  display: inline-block;
-}
-
-.top-product-item-title {
-  margin-top: 8rem;
-  font-size: 18rem;
-  line-height: 1.45;
-  letter-spacing: 0.05em;
-}
-@media screen and (min-width: 768px) {
-  .top-product-item-title {
-    font-size: 20rem;
-  }
-}
-
 .top-product-button {
   display: grid;
   place-items: center;
@@ -2223,6 +2260,22 @@ page > business > business-contents
     font-size: 16rem;
     line-height: 1.9;
     letter-spacing: 0;
+  }
+}
+
+/*!
+page > product > product-archive
+------------------------------
+*/
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rem 20rem;
+}
+@media screen and (min-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64rem 44rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
