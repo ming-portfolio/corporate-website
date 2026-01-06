@@ -38,11 +38,12 @@ page > top > top-kv
 
 .top-kv-jp {
   font-size: 30rem;
-  line-height: normal;
+  line-height: 1.43;
   margin-bottom: 8rem;
 
   @include g.mq() {
     font-size: 55rem;
+    line-height: 1.45;
     margin-bottom: 24rem;
   }
 }

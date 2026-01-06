@@ -1,0 +1,254 @@
+@use "../../global" as g;
+
+/*!
+page > business > business-contents
+------------------------------
+*/
+
+.business-wrapper {
+  margin-block: 80rem;
+
+  @include g.mq() {
+    display: grid;
+    grid-template-columns: 240rem 1fr;
+    margin-block: 149.5rem 201rem;
+    gap: 155rem;
+  }
+}
+
+.business-sidebar {
+  display: none;
+
+  @include g.mq() {
+    display: block;
+    position: sticky;
+    top: 40px;
+    align-self: start;
+    height: fit-content;
+  }
+}
+
+.business-menu-list {
+  @include g.mq() {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+    margin-top: 32rem;
+  }
+}
+
+.business-menu-item {
+  @include g.mq() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 9rem;
+      height: 9rem;
+      background-image: url("../img/common/button-arrow-blue.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.business-menu-item-link {
+  @include g.mq() {
+    color: var(--text-base);
+    font-size: 16rem;
+    line-height: 1.5;
+    opacity: 0.5;
+    transition: color 0.3s;
+
+    &.is-active {
+      opacity: 1;
+    }
+  }
+}
+
+.business-main {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+}
+
+.business-main-title-en {
+  display: block;
+  color: var(--text-primary);
+  font-family: var(--font-family-en);
+  font-size: 16rem;
+  line-height: 1.16;
+
+  @include g.mq() {
+    font-size: 20rem;
+  }
+}
+
+.business-main-title-jp {
+  font-size: 24rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+
+  @include g.mq() {
+    font-size: 32rem;
+  }
+}
+
+.business-problem-text {
+  font-size: 16rem;
+  line-height: 2;
+  margin-top: 16rem;
+
+  @include g.mq() {
+    line-height: 1.9;
+    margin-top: 24rem;
+  }
+}
+
+.business-problem-list {
+  background-color: var(--bg-lightest-blue);
+  padding: 32rem 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+  margin-top: 24rem;
+
+  @include g.mq() {
+    padding: 48rem 40rem;
+    margin-top: 24rem;
+  }
+}
+
+.business-problem-item {
+  font-weight: bold;
+  font-size: 16rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+  display: flex;
+  gap: 16rem;
+
+  @include g.mq() {
+    font-size: 18rem;
+    line-height: 1.5;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 21rem;
+    height: 21rem;
+    background-image: url("../img/business/business-icon-check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include g.mq() {
+      width: 27rem;
+      height: 27rem;
+    }
+  }
+}
+
+.business-feature-content {
+  margin-top: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+
+  @include g.mq() {
+    margin-top: 32rem;
+  }
+}
+
+.business-feature-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16rem;
+
+  @include g.mq() {
+    grid-template-columns: 240rem 1fr;
+    gap: 32rem;
+  }
+}
+
+.business-feature-text {
+  align-self: center;
+}
+
+.business-feature-title {
+  font-size: 18rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+
+  @include g.mq() {
+    font-size: 24rem;
+  }
+}
+
+.business-feature-about {
+  margin-top: 10rem;
+}
+
+.business-flow-content {
+  margin-top: 24rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32rem;
+
+  @include g.mq() {
+    margin-top: 24rem;
+  }
+}
+
+.business-flow-item {
+  display: grid;
+  grid-template-columns: 100rem 1fr;
+  gap: 16rem;
+
+  @include g.mq() {
+    grid-template-columns: 150rem 1fr;
+    gap: 32rem;
+  }
+}
+
+.business-flow-number {
+  display: block;
+  color: var(--text-primary);
+  font-family: var(--font-family-en);
+  font-size: 16rem;
+  line-height: 1.19;
+  letter-spacing: 0.05em;
+
+  @include g.mq() {
+    font-size: 24rem;
+  }
+}
+
+.business-flow-title {
+  font-size: 18rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+
+  @include g.mq() {
+    font-size: 24rem;
+  }
+}
+
+.business-flow-about {
+  margin-top: 3rem;
+  font-size: 14rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+
+  @include g.mq() {
+    margin-top: 10rem;
+    font-size: 16rem;
+    line-height: 1.9;
+    letter-spacing: 0;
+  }
+}

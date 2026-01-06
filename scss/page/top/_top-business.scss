@@ -47,7 +47,7 @@ page > top > top-business
 .top-business-text {
   margin-block: 8rem 24rem;
   font-size: 28rem;
-  line-height: normal;
+  line-height: 1.45;
   letter-spacing: 0.05em;
 
   @include g.mq() {
@@ -76,7 +76,7 @@ page > top > top-business
   border-bottom: 1rem solid var(--sep-lightgrey);
   padding: 0 16rem 15rem 16rem;
   font-size: 18rem;
-  line-height: normal;
+  line-height: 1.45;
   letter-spacing: 0.05em;
 
   @include g.mq() {

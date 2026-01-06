@@ -14,6 +14,7 @@ page > top > top-news
 
   @include g.mq() {
     padding: 63rem 80rem;
+    border-radius: 56rem 0 0 0;
   }
 }
 
@@ -53,13 +54,12 @@ page > top > top-news
   background-color: var(--bg-lightest-blue);
   padding: 16rem 24rem;
   border-radius: 100vh;
-  line-height: normal;
   display: inline-flex;
   gap: 53rem;
   align-items: center;
   transition: background-color 0.3s ease, opacity 0.3s ease;
   font-size: 16rem;
-  line-height: normal;
+  line-height: 1.15;
   font-family: var(--font-family-en);
 
   &::after {
@@ -123,8 +123,12 @@ page > top > top-news
 }
 
 .top-news-item-link {
-  display: inline-block;
+  display: block;
   transition: 0.3s;
+
+  @include g.mq() {
+    display: inline-block;
+  }
 
   @media (any-hover: hover) {
     &:hover {
@@ -137,5 +141,5 @@ page > top > top-news
 .top-news-item-date {
   font-family: var(--font-family-en);
   font-size: 17rem;
-  line-height: normal;
+  line-height: 1.16;
 }

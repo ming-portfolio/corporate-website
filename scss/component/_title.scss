@@ -10,12 +10,6 @@ component > title
   gap: 8rem;
 }
 
-.c-title--pc-wide {
-  @include g.mq() {
-    gap: 16rem;
-  }
-}
-
 .c-title--row {
   flex-direction: row;
   align-items: baseline;
@@ -31,17 +25,9 @@ component > title
 
 .c-title-en {
   font-size: 40rem;
-  line-height: normal;
+  line-height: 1.15;
   font-family: var(--font-family-en);
   color: var(--text-primary);
-}
-
-.c-title-en--big {
-  font-size: 50rem;
-
-  @include g.mq() {
-    font-size: 72rem;
-  }
 }
 
 .c-title-en--small {
@@ -61,7 +47,7 @@ component > title
 }
 
 .c-title-jp {
-  line-height: normal;
+  line-height: 1.45;
   color: var(--text-light-base);
 
   @include g.mq() {
@@ -69,16 +55,76 @@ component > title
   }
 }
 
-.c-title-jp--pc-big {
+.c-title-jp--white {
+  color: var(--text-white);
+}
+
+.c-page-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+
+  @include g.mq() {
+    gap: 16rem;
+  }
+}
+
+.c-page-title-en {
+  font-size: 50rem;
+  line-height: 1.15;
+  font-family: var(--font-family-en);
+  color: var(--text-primary);
+
+  @include g.mq() {
+    font-size: 72rem;
+  }
+}
+
+.c-page-title-jp {
+  line-height: 1.45;
+  color: var(--text-base);
+
   @include g.mq() {
     font-size: 18rem;
   }
 }
 
-.c-title-jp--black {
-  color: var(--text-base);
+.c-page-title-row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8rem;
 }
 
-.c-title-jp--white {
-  color: var(--text-white);
+.c-page-title-row-en {
+  font-size: 20rem;
+  line-height: 1.15;
+  font-family: var(--font-family-en);
+  color: var(--text-primary);
+
+  @include g.mq() {
+    font-size: 24rem;
+  }
+}
+
+.c-page-title-row-jp {
+  line-height: 1.45;
+  color: var(--text-light-base);
+
+  @include g.mq() {
+    font-size: 18rem;
+  }
+}
+
+.c-page-title-sub {
+  font-size: 28rem;
+  line-height: 1.45;
+  letter-spacing: 0.05em;
+  margin-top: 12rem;
+  font-weight: 500;
+
+  @include g.mq() {
+    font-size: 44rem;
+    margin-top: 16rem;
+  }
 }

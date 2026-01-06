@@ -75,7 +75,7 @@ layout > footer
 .l-footer-address {
   margin-top: 32rem;
   font-size: 13rem;
-  line-height: normal;
+  line-height: 1.46;
   white-space: nowrap;
 }
 
@@ -83,14 +83,14 @@ layout > footer
   display: inline-block;
   margin-top: 8rem;
   font-size: 13rem;
-  line-height: normal;
+  line-height: 1.23;
   vertical-align: bottom;
 }
 
 .l-footer-tel-link {
   font-family: var(--font-family-en);
   font-size: 21rem;
-  line-height: normal;
+  line-height: 1.14;
   margin-left: 8rem;
   transition: 0.3s ease;
 
@@ -104,7 +104,7 @@ layout > footer
 .l-footer-copyright {
   font-family: var(--font-family-en);
   font-size: 13rem;
-  line-height: normal;
+  line-height: 1.15;
 }
 
 .l-footer-nav {
@@ -114,7 +114,7 @@ layout > footer
     display: flex;
     gap: 96rem;
     font-size: 15rem;
-    line-height: normal;
+    line-height: 1.46;
   }
 }
 

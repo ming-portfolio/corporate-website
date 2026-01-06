@@ -20,7 +20,7 @@ layout > header
   }
 }
 
-.l-header--sub {
+.l-header--page {
   margin-top: 40rem;
 
   @include g.mq() {
@@ -149,6 +149,7 @@ layout > header
 }
 
 .l-header-list {
+  color: var(--text-white);
   width: 87%;
 
   &:first-of-type {
@@ -167,8 +168,13 @@ layout > header
   }
 }
 
+.l-header-list--page {
+  @include g.mq() {
+    color: var(--text-base);
+  }
+}
+
 .l-header-item {
-  color: var(--text-white);
   display: flex;
   flex-direction: column;
   gap: 16rem;
@@ -188,17 +194,11 @@ layout > header
   }
 }
 
-.l-header-item--pc-black {
-  @include g.mq() {
-    color: var(--text-base);
-  }
-}
-
 .l-header-link {
   border-bottom: 1rem solid var(--border-white-20);
   padding: 20rem 16rem;
   font-size: 15rem;
-  line-height: normal;
+  line-height: 1.45;
   display: flex;
   align-items: baseline;
   gap: 8rem;
@@ -220,7 +220,7 @@ layout > header
   }
 }
 
-.l-header-link--pc-wide {
+.l-header-link--page {
   @include g.mq() {
     margin-right: 31rem;
   }
@@ -229,7 +229,7 @@ layout > header
 .l-header-item-link-en {
   font-size: 24rem;
   font-family: var(--font-family-en);
-  line-height: normal;
+  line-height: 1.16;
 
   @include g.mq() {
     display: none;
@@ -282,6 +282,7 @@ layout > header
 
 .l-header-item-link--contact {
   @include g.mq() {
+    color: var(--text-white);
     background-color: var(--bg-primary);
     padding: 12rem 32rem;
     width: 160rem;
@@ -332,13 +333,13 @@ layout > header
   color: var(--bg-white);
   border-bottom: 1rem solid var(--border-white-20);
   font-size: 14rem;
-  line-height: normal;
+  line-height: 1.45;
   letter-spacing: 0.05em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20rem;
-  padding: 0 16rem 16rem 16rem;
+  padding: 0 16rem 15rem 16rem;
 
   @include g.mq() {
     &:last-of-type {
