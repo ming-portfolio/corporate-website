@@ -6,6 +6,8 @@ component > breadcrumb
 */
 .c-breadcrumb {
   margin-top: 16rem;
+  position: relative;
+  z-index: var(--z-index-default);
 
   @include g.mq() {
     margin-top: 30rem;

@@ -39,9 +39,8 @@ component > page-kv
   width: 90%;
 
   @include g.mq() {
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    width: auto;
+    grid-template-columns: 760rem 484rem;
+    gap: 56rem;
     top: 48%;
     width: auto;
   }
@@ -54,6 +53,8 @@ component > page-kv
 .c-page-kv-image {
   width: 338rem;
   height: 169rem;
+  border-radius: 0 0 0 56rem;
+  overflow: hidden;
 
   @include g.mq() {
     margin-top: -24.5rem;
@@ -62,4 +63,8 @@ component > page-kv
     width: 484rem;
     height: 323rem;
   }
+}
+
+.c-page-kv-image--product {
+  border: 1rem solid var(--sep-lightgrey);
 }

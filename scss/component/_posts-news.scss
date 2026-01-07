@@ -1,0 +1,19 @@
+@use "../global" as g;
+
+/*!
+component > posts-news
+------------------------------
+*/
+
+.c-posts-news {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rem;
+  gap: 20rem;
+  border-top: 1rem solid var(--sep-lightgrey);
+
+  @include g.mq($breakpoint: lg) {
+    padding-top: 31rem;
+    gap: 31rem;
+  }
+}

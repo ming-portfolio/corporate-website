@@ -1,0 +1,52 @@
+@use "../../global" as g;
+
+/*!
+page > product > product-detail
+------------------------------
+*/
+
+.product-detail-wrapper {
+  margin-block: 80rem;
+
+  @include g.mq() {
+    margin-block: 144.5rem 120rem;
+  }
+}
+
+.product-detail-main-slider img {
+  border: 1rem solid var(--sep-lightgrey);
+  border-radius: 0 0 0 56rem;
+  overflow: hidden;
+  margin-bottom: 16rem;
+  aspect-ratio: 340 / 227;
+  object-fit: cover;
+
+  @include g.mq() {
+    margin-bottom: 24rem;
+    aspect-ratio: 1000 / 500;
+  }
+}
+
+.product-detail-thumbnail-slider {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8rem;
+
+  @include g.mq() {
+    gap: 16rem;
+  }
+}
+
+.product-detail-thumbnail-slider img {
+  aspect-ratio: 72 / 72;
+  object-fit: cover;
+  border: 1rem solid var(--sep-lightgrey);
+
+  @include g.mq() {
+    aspect-ratio: 104 / 104;
+  }
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  display: none;
+}

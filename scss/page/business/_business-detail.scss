@@ -22,7 +22,7 @@ page > business > business-contents
   @include g.mq() {
     display: block;
     position: sticky;
-    top: 40px;
+    top: 40rem;
     align-self: start;
     height: fit-content;
   }

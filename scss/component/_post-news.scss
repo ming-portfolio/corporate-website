@@ -1,0 +1,51 @@
+@use "../global" as g;
+
+/*!
+component > post-news
+------------------------------
+*/
+
+.c-post-news {
+  border-bottom: 1rem solid var(--sep-lightgrey);
+  padding-bottom: 19rem;
+
+  @include g.mq($breakpoint: lg) {
+    padding-bottom: 31rem;
+  }
+}
+
+.c-post-news-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 0 16rem;
+
+  @include g.mq($breakpoint: lg) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 120rem 1fr;
+    gap: 16rem;
+  }
+}
+
+.c-post-news-link {
+  display: block;
+  transition: 0.3s;
+
+  @include g.mq() {
+    display: inline-block;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: var(--bg-primary);
+      opacity: 0.8;
+    }
+  }
+}
+
+.c-post-news-date {
+  font-family: var(--font-family-en);
+  font-size: 17rem;
+  line-height: 1.16;
+}

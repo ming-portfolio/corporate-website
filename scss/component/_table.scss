@@ -35,6 +35,12 @@ component > table
   }
 }
 
+.c-table-row--product {
+  @include g.mq() {
+    grid-template-columns: 224rem 1fr;
+  }
+}
+
 .c-table-header {
   font-weight: bold;
   line-height: 1.45;
