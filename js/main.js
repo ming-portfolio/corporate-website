@@ -219,41 +219,45 @@ const initializeTopMainVisual = () => {
   const el = document.querySelector(".js-top-kv-splide");
   if (!el) return;
 
+  const INTERVAL = 10000;
+
   const splide = new Splide(el, {
     type: "fade",
     rewind: true,
     speed: 2000,
-    interval: 10000,
+    interval: INTERVAL,
     autoplay: true,
     pauseOnHover: false,
     arrows: false,
     pagination: false,
   });
 
-  // スライド番号の連動アニメーション ---
   const numberEl = document.querySelector(".js-top-kv-circle-num");
-  if (!numberEl) return;
+  const progressCircle = document.querySelector(".js-top-kv-circle-progress");
+  if (!numberEl || !progressCircle) return;
 
-  if (numberEl) {
-    const animOptions = {
-      duration: 400,
-      easing: "ease-out",
-    };
+  const CIRCUMFERENCE = 301;
 
-    splide.on("move", (newIndex) => {
-      // 1. まず今の数字をふわっと消す
-      const fadeOut = numberEl.animate({ opacity: [1, 0], transform: ["translateY(0)", "translateY(-5px)"] }, animOptions);
+  const startProgress = () => {
+    progressCircle.style.transition = "none";
+    progressCircle.style.strokeDashoffset = CIRCUMFERENCE;
 
-      fadeOut.onfinish = () => {
-        // 2. 消えきったら数字を書き換える（01, 02...の形式に）
-        const nextNum = (newIndex + 1).toString().padStart(2, "0");
-        numberEl.textContent = nextNum;
-
-        // 3. 新しい数字をふわっと出す
-        numberEl.animate({ opacity: [0, 1], transform: ["translateY(5px)", "translateY(0)"] }, animOptions);
-      };
+    requestAnimationFrame(() => {
+      progressCircle.style.transition = `stroke-dashoffset ${INTERVAL}ms linear`;
+      progressCircle.style.strokeDashoffset = 0;
     });
-  }
+  };
+
+  splide.on("mounted", () => {
+    const index = splide.index;
+    numberEl.textContent = (index + 1).toString().padStart(2, "0");
+    startProgress();
+  });
+
+  splide.on("move", (newIndex) => {
+    numberEl.textContent = (newIndex + 1).toString().padStart(2, "0");
+    startProgress();
+  });
 
   splide.mount();
 };

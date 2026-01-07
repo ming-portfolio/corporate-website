@@ -1498,20 +1498,10 @@ page > top > top-kv
   left: 0;
   width: 104rem;
   height: 104rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 32rem;
-}
-.top-kv-circle::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 2rem solid color-mix(in srgb, var(--bg-white) 25%, transparent);
-  border-top: 2rem solid var(--bg-white);
-  -webkit-animation: rotateCircleOnly 10s linear infinite;
-          animation: rotateCircleOnly 10s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .top-kv-circle {
@@ -1522,6 +1512,30 @@ page > top > top-kv
     height: 146rem;
     margin-bottom: 0;
   }
+}
+
+.top-kv-circle-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  overflow: visible;
+}
+
+.top-kv-circle-base {
+  fill: none;
+  stroke: color-mix(in srgb, var(--bg-white) 25%, transparent);
+  stroke-width: 1.5;
+}
+
+.top-kv-circle-progress {
+  fill: none;
+  stroke: var(--bg-white);
+  stroke-width: 1rem;
+  stroke-linecap: round;
+  stroke-dasharray: 308;
+  stroke-dashoffset: 308;
 }
 
 .top-kv-circle-num {
