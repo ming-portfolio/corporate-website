@@ -1,0 +1,55 @@
+@use "../global" as g;
+
+/*!
+component > button
+------------------------------
+*/
+
+.c-button {
+  order: 3;
+  align-self: flex-end;
+
+  @include g.mq() {
+    align-self: auto;
+  }
+}
+
+.c-button-link {
+  background-color: var(--bg-lightest-blue);
+  padding: 16rem 24rem;
+  border-radius: 100vh;
+  display: inline-flex;
+  gap: 43rem;
+  align-items: center;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  font-size: 16rem;
+  line-height: 1.15;
+  font-family: var(--font-family-en);
+
+  &::after {
+    content: "";
+    display: block;
+    background-image: url("../img/common/button-arrow-blue.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 12rem;
+    height: 11rem;
+    transition: transform 0.3s ease;
+  }
+
+  @include g.mq() {
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.8;
+        &::after {
+          transform: translateX(4rem);
+        }
+      }
+    }
+  }
+}
+
+.c-button-link--top {
+  gap: 53rem;
+}

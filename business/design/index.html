@@ -51,7 +51,7 @@
           </a>
         </div>
 
-        <button class="l-header-menu-open-button js-header-menu-open-button">
+        <button type="button" class="l-header-menu-open-button js-header-menu-open-button">
           <span class="l-header-menu-open-button-line">
             <span class="l-header-menu-open-button-line-item"></span>
             <span class="l-header-menu-open-button-line-item"></span>
@@ -68,7 +68,7 @@
                   <img src="/img/common/logo-white.svg" width="247" height="74" alt="森下株式会社" decoding="async" />
                 </a>
               </div>
-              <button class="l-header-menu-close-button js-header-menu-close-button">
+              <button type="button" class="l-header-menu-close-button js-header-menu-close-button">
                 <span class="l-header-menu-close-button-line">
                   <span class="l-header-menu-close-button-line-item"></span>
                   <span class="l-header-menu-close-button-line-item"></span>
@@ -166,7 +166,7 @@
         <!-- end breadcrumb -->
 
         <div class="business-wrapper l-container">
-          <div class="business-sidebar">
+          <nav class="business-sidebar" aria-label="事業紹介ページ内メニュー">
             <div class="c-title">
               <span class="c-title-en">MENU</span>
               <h2 class="c-title-jp">メニュー</h2>
@@ -182,7 +182,7 @@
                 <a href="#flow" class="business-menu-item-link js-business-menu-item-link">納品までの流れ</a>
               </li>
             </ul>
-          </div>
+          </nav>
 
           <div class="business-main">
             <section class="business-problem js-scroll-section" id="problem">
@@ -310,16 +310,16 @@
       </main>
 
       <footer class="l-footer">
-        <button class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
+        <button type="button" class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
           <img src="/img/layout/footer/footer-button.svg" width="80" height="80" alt="" decoding="async" />
         </button>
         <div class="l-footer-inner l-container">
           <div class="l-footer-block">
-            <div class="l-footer-info">
+            <address class="l-footer-info">
               <img src="/img/common/logo-white.svg" width="247" height="74" alt="" decoding="async" class="l-footer-logo" />
-              <address class="l-footer-address">〒123-4567 東京都春日区青葉町2-11-7</address>
-              <span class="l-footer-tel">Tel.<a href="/tel:0312345678" class="l-footer-tel-link">03-1234-5678</a></span>
-            </div>
+              <p class="l-footer-address">〒123-4567 東京都春日区青葉町2-11-7</p>
+              <p class="l-footer-tel">Tel.<a href="tel:0312345678" class="l-footer-tel-link">03-1234-5678</a></p>
+            </address>
             <small class="l-footer-copyright">&#169; 2024 MORISITA inc.</small>
           </div>
           <div class="l-footer-nav">
@@ -331,7 +331,7 @@
             </ul>
             <ul class="l-footer-list02">
               <li>
-                事業紹介
+                <span>事業紹介</span>
                 <ul class="l-footer-business-detail">
                   <li class="l-footer-item"><a href="/business/design/">特殊ボルトナットの設計・製造</a></li>
                   <li class="l-footer-item"><a href="/business/order-made/">特殊ボルトナットのオーダーメイド</a></li>

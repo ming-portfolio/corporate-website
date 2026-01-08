@@ -51,7 +51,7 @@
           </a>
         </div>
 
-        <button class="l-header-menu-open-button js-header-menu-open-button">
+        <button type="button" class="l-header-menu-open-button js-header-menu-open-button">
           <span class="l-header-menu-open-button-line">
             <span class="l-header-menu-open-button-line-item"></span>
             <span class="l-header-menu-open-button-line-item"></span>
@@ -68,7 +68,7 @@
                   <img src="/img/common/logo-white.svg" width="247" height="74" alt="森下株式会社" decoding="async" />
                 </a>
               </div>
-              <button class="l-header-menu-close-button js-header-menu-close-button">
+              <button type="button" class="l-header-menu-close-button js-header-menu-close-button">
                 <span class="l-header-menu-close-button-line">
                   <span class="l-header-menu-close-button-line-item"></span>
                   <span class="l-header-menu-close-button-line-item"></span>
@@ -156,7 +156,7 @@
         </nav>
         <!-- end breadcrumb -->
 
-        <section class="u-ptb l-container-s">
+        <div class="u-ptb l-container-s">
           <picture>
             <source media="(max-width: 767px)" srcset="/img/company/company-exterior-sp.png" />
             <img src="/img/company/company-exterior-pc.png" width="1000" height="500" alt="森下株式会社 本社外観" decoding="async" />
@@ -202,11 +202,11 @@
               </tr>
               <tr class="c-table-row">
                 <th class="c-table-header" scope="row">連絡先</th>
-                <td class="c-table-data"><a href="/tel:0312345678" class="c-table-link-tel">03-1234-5678</a></td>
+                <td class="c-table-data"><a href="tel:0312345678" class="c-table-link-tel">03-1234-5678</a></td>
               </tr>
             </tbody>
           </table>
-        </section>
+        </div>
 
         <!-- contact -->
         <section class="c-contact">
@@ -234,16 +234,16 @@
       </main>
 
       <footer class="l-footer">
-        <button class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
+        <button type="button" class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
           <img src="/img/layout/footer/footer-button.svg" width="80" height="80" alt="" decoding="async" />
         </button>
         <div class="l-footer-inner l-container">
           <div class="l-footer-block">
-            <div class="l-footer-info">
+            <address class="l-footer-info">
               <img src="/img/common/logo-white.svg" width="247" height="74" alt="" decoding="async" class="l-footer-logo" />
-              <address class="l-footer-address">〒123-4567 東京都春日区青葉町2-11-7</address>
-              <span class="l-footer-tel">Tel.<a href="/tel:0312345678" class="l-footer-tel-link">03-1234-5678</a></span>
-            </div>
+              <p class="l-footer-address">〒123-4567 東京都春日区青葉町2-11-7</p>
+              <p class="l-footer-tel">Tel.<a href="tel:0312345678" class="l-footer-tel-link">03-1234-5678</a></p>
+            </address>
             <small class="l-footer-copyright">&#169; 2024 MORISITA inc.</small>
           </div>
           <div class="l-footer-nav">
@@ -255,7 +255,7 @@
             </ul>
             <ul class="l-footer-list02">
               <li>
-                事業紹介
+                <span>事業紹介</span>
                 <ul class="l-footer-business-detail">
                   <li class="l-footer-item"><a href="/business/design/">特殊ボルトナットの設計・製造</a></li>
                   <li class="l-footer-item"><a href="/business/order-made/">特殊ボルトナットのオーダーメイド</a></li>

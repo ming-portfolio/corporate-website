@@ -51,7 +51,7 @@
           </a>
         </h1>
 
-        <button class="l-header-menu-open-button js-header-menu-open-button">
+        <button type="button" class="l-header-menu-open-button js-header-menu-open-button">
           <span class="l-header-menu-open-button-line">
             <span class="l-header-menu-open-button-line-item"></span>
             <span class="l-header-menu-open-button-line-item"></span>
@@ -68,7 +68,7 @@
                   <img src="/img/common/logo-white.svg" width="247" height="74" alt="森下株式会社" decoding="async" />
                 </a>
               </div>
-              <button class="l-header-menu-close-button js-header-menu-close-button">
+              <button type="button" class="l-header-menu-close-button js-header-menu-close-button">
                 <span class="l-header-menu-close-button-line">
                   <span class="l-header-menu-close-button-line-item"></span>
                   <span class="l-header-menu-close-button-line-item"></span>
@@ -181,8 +181,8 @@
                 <span class="c-title-en">NEWS</span>
                 <h2 class="c-title-jp">お知らせ</h2>
               </div>
-              <div class="top-news-button">
-                <a href="/news/" class="top-news-button-link">VIEW MORE</a>
+              <div class="c-button-button">
+                <a href="/news/" class="c-button-link c-button-link--top">VIEW MORE</a>
               </div>
             </div>
             <div class="c-posts-news js-posts-news">
@@ -271,8 +271,8 @@
             <div class="top-product-about">
               <p class="top-product-text02">高品質・高精度のボルトナットを豊富に取り揃え。<span class="u-block">産業の要として、お客様のニーズに応える製品をお届けします。</span></p>
               <div class="splide__arrows top-product-arrow">
-                <button class="splide__arrow splide__arrow--prev"><span class="u-visually-hidden">前へ</span></button>
-                <button class="splide__arrow splide__arrow--next"><span class="u-visually-hidden">次へ</span></button>
+                <button type="button" class="splide__arrow splide__arrow--prev"><span class="u-visually-hidden">前へ</span></button>
+                <button type="button" class="splide__arrow splide__arrow--next"><span class="u-visually-hidden">次へ</span></button>
               </div>
             </div>
 
@@ -375,16 +375,16 @@
       </main>
 
       <footer class="l-footer">
-        <button class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
+        <button type="button" class="l-footer-button js-footer-button" aria-label="ページトップへ戻る">
           <img src="/img/layout/footer/footer-button.svg" width="80" height="80" alt="" decoding="async" />
         </button>
         <div class="l-footer-inner l-container">
           <div class="l-footer-block">
-            <div class="l-footer-info">
+            <address class="l-footer-info">
               <img src="/img/common/logo-white.svg" width="247" height="74" alt="" decoding="async" class="l-footer-logo" />
-              <address class="l-footer-address">〒123-4567 東京都春日区青葉町2-11-7</address>
-              <span class="l-footer-tel">Tel.<a href="/tel:0312345678" class="l-footer-tel-link">03-1234-5678</a></span>
-            </div>
+              <p class="l-footer-address">〒123-4567 東京都春日区青葉町2-11-7</p>
+              <p class="l-footer-tel">Tel.<a href="tel:0312345678" class="l-footer-tel-link">03-1234-5678</a></p>
+            </address>
             <small class="l-footer-copyright">&#169; 2024 MORISITA inc.</small>
           </div>
           <div class="l-footer-nav">
@@ -396,7 +396,7 @@
             </ul>
             <ul class="l-footer-list02">
               <li>
-                事業紹介
+                <span>事業紹介</span>
                 <ul class="l-footer-business-detail">
                   <li class="l-footer-item"><a href="/business/design/">特殊ボルトナットの設計・製造</a></li>
                   <li class="l-footer-item"><a href="/business/order-made/">特殊ボルトナットのオーダーメイド</a></li>
