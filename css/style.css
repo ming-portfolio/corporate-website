@@ -13,6 +13,7 @@ global > color
   --text-primary: #1e4aa4;
   --text-white: #ffffff;
   --text-light-base: #9a9eac;
+  --text-required: #c82b2b;
   --other-logo: #06235e;
   --other-logo: #e5ebf0;
   --other-link: #497fdf;
@@ -950,6 +951,52 @@ component > post-news
 }
 
 /*!
+component > form-text
+------------------------------
+*/
+.c-form-required {
+  display: inline-block;
+  margin-left: 8rem;
+  font-size: 14rem;
+  line-height: 1.43;
+  letter-spacing: 0.05em;
+  color: var(--text-required);
+}
+
+.c-form-text {
+  background: var(--bg-lightest-blue);
+  padding: 16.5rem 16rem;
+  outline: none;
+  width: 100%;
+  font-size: 15rem;
+  line-height: 1.45;
+  border-radius: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .c-form-text {
+    font-size: 16rem;
+    line-height: 1.5;
+    padding: 15.5rem 24rem;
+  }
+}
+
+.c-form-text::-moz-placeholder {
+  opacity: 0.6;
+}
+
+.c-form-text::placeholder {
+  opacity: 0.6;
+}
+
+.c-form-text:focus {
+  border: 1px solid var(--color-focus);
+}
+
+.c-form-text--textarea {
+  field-sizing: content;
+}
+
+/*!
 layout > container
 ------------------------------
 */
@@ -1261,6 +1308,7 @@ layout > header
   .l-header-item-link--contact:hover {
     color: var(--bg-primary);
     background-color: var(--bg-white);
+    outline: 1px solid var(--bg-primary);
     opacity: 1;
   }
 }
@@ -2543,6 +2591,107 @@ page > message > message
 @media screen and (min-width: 768px) {
   .message-name {
     font-size: 32rem;
+  }
+}
+
+/*!
+page > contact > contact
+------------------------------
+*/
+.contact-wrapper {
+  margin-block: 80rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-wrapper {
+    margin-block: 120rem;
+  }
+}
+
+.contact-form {
+  margin-block: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-form {
+    gap: 32rem;
+  }
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-item {
+    grid-template-columns: 200rem 1fr;
+    gap: 16rem;
+  }
+}
+
+.contact-label {
+  font-weight: bold;
+  font-size: 15rem;
+  line-height: 1.45rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-label {
+    font-size: 16rem;
+    line-height: 1.44rem;
+    translate: 0 16rem;
+  }
+}
+
+.contact-textarea {
+  height: 120rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-textarea {
+    height: 160rem;
+  }
+}
+
+.contact-submit-area {
+  margin-top: 24rem;
+  display: grid;
+  place-items: center;
+  gap: 24rem;
+}
+@media screen and (min-width: 768px) {
+  .contact-submit-area {
+    margin-top: 48rem;
+  }
+}
+
+.contact-text02-link {
+  color: var(--text-primary);
+  text-decoration: underline;
+  transition: 0.3s ease;
+}
+@media (any-hover: hover) {
+  .contact-text02-link:hover {
+    opacity: 0.7;
+  }
+}
+
+.contact-button-submit {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-size: 18rem;
+  line-height: 1.44;
+  letter-spacing: 0.05em;
+  padding: 24rem 122.5rem;
+  border-radius: 100vh;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+@media (any-hover: hover) {
+  .contact-button-submit:hover {
+    background-color: var(--bg-white);
+    color: var(--bg-primary);
+    outline: 1px solid var(--bg-primary);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,99 @@
+@use "../../global" as g;
+
+/*!
+page > contact > contact
+------------------------------
+*/
+
+.contact-wrapper {
+  margin-block: 80rem;
+
+  @include g.mq() {
+    margin-block: 120rem;
+  }
+}
+
+.contact-form {
+  margin-block: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 24rem;
+
+  @include g.mq() {
+    gap: 32rem;
+  }
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8rem;
+
+  @include g.mq() {
+    grid-template-columns: 200rem 1fr;
+    gap: 16rem;
+  }
+}
+
+.contact-label {
+  font-weight: bold;
+  font-size: 15rem;
+  line-height: 1.45rem;
+
+  @include g.mq() {
+    font-size: 16rem;
+    line-height: 1.44rem;
+    translate: 0 16rem;
+  }
+}
+
+.contact-textarea {
+  height: 120rem;
+
+  @include g.mq() {
+    height: 160rem;
+  }
+}
+
+.contact-submit-area {
+  margin-top: 24rem;
+  display: grid;
+  place-items: center;
+  gap: 24rem;
+
+  @include g.mq() {
+    margin-top: 48rem;
+  }
+}
+
+.contact-text02-link {
+  color: var(--text-primary);
+  text-decoration: underline;
+  transition: 0.3s ease;
+
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.contact-button-submit {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-size: 18rem;
+  line-height: 1.44;
+  letter-spacing: 0.05em;
+  padding: 24rem 122.5rem;
+  border-radius: 100vh;
+  display: inline-block;
+  transition: 0.3s ease;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--bg-white);
+      color: var(--bg-primary);
+      outline: 1px solid var(--bg-primary);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "../global" as g;
+
+/*!
+component > form-text
+------------------------------
+*/
+.c-form-required {
+  display: inline-block;
+  margin-left: 8rem;
+  font-size: 14rem;
+  line-height: 1.43;
+  letter-spacing: 0.05em;
+  color: var(--text-required);
+}
+
+.c-form-text {
+  background: var(--bg-lightest-blue);
+  padding: 16.5rem 16rem;
+  outline: none;
+  width: 100%;
+  font-size: 15rem;
+  line-height: 1.45;
+  border-radius: 4rem;
+
+  @include g.mq() {
+    font-size: 16rem;
+    line-height: 1.5;
+    padding: 15.5rem 24rem;
+  }
+}
+
+.c-form-text::placeholder {
+  opacity: 0.6;
+}
+
+.c-form-text:focus {
+  border: 1px solid var(--color-focus);
+}
+
+.c-form-text--textarea {
+  field-sizing: content;
+}

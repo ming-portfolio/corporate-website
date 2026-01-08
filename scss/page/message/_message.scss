@@ -15,12 +15,6 @@ page > message > message
   }
 }
 
-.message-image {
-}
-
-.message-content {
-}
-
 .message-title {
   font-size: 28rem;
   line-height: 1.45;
@@ -52,9 +46,6 @@ page > message > message
   @include g.mq() {
     margin-top: 40rem;
   }
-}
-
-.message-role {
 }
 
 .message-name {
