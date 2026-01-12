@@ -40,3 +40,12 @@ page > top > top-news
     gap: 50rem;
   }
 }
+
+.top-news-button {
+  order: 3;
+  align-self: flex-end;
+
+  @include g.mq() {
+    align-self: auto;
+  }
+}

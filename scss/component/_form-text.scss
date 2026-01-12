@@ -29,12 +29,16 @@ component > form-text
   }
 }
 
-.c-form-text::placeholder {
-  opacity: 0.6;
+.c-form-text {
+  &::placeholder {
+    opacity: 0.6;
+  }
 }
 
 .c-form-text:focus {
-  border: 1px solid var(--color-focus);
+  &:focus {
+    border: 1rem solid var(--color-focus);
+  }
 }
 
 .c-form-text--textarea {

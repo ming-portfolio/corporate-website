@@ -24,7 +24,7 @@ page > message > message
     font-size: 32rem;
   }
 
-  :first-child {
+  & :first-child {
     color: var(--text-primary);
   }
 }

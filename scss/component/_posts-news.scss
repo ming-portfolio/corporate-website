@@ -12,7 +12,7 @@ component > posts-news
   gap: 20rem;
   border-top: 1rem solid var(--sep-lightgrey);
 
-  @include g.mq($breakpoint: lg) {
+  @include g.mq() {
     padding-top: 31rem;
     gap: 31rem;
   }

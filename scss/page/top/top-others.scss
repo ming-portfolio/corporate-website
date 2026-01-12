@@ -4,8 +4,6 @@
 page > top > top-others
 ------------------------------
 */
-.top-others-nav {
-}
 
 .top-others-list {
   display: grid;
@@ -40,9 +38,6 @@ page > top > top-others
   @include g.mq() {
     padding-bottom: 16rem;
   }
-}
-
-.top-others-text {
 }
 
 .top-others-link {

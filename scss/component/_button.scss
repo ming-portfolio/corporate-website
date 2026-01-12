@@ -5,15 +5,6 @@ component > button
 ------------------------------
 */
 
-.c-button {
-  order: 3;
-  align-self: flex-end;
-
-  @include g.mq() {
-    align-self: auto;
-  }
-}
-
 .c-button-link {
   background-color: var(--bg-lightest-blue);
   padding: 16rem 24rem;
@@ -70,7 +61,7 @@ component > button
     &:hover {
       background-color: var(--bg-white);
       color: var(--bg-primary);
-      outline: 1px solid var(--bg-primary);
+      outline: 1rem solid var(--bg-primary);
     }
   }
 }

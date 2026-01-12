@@ -1,0 +1,16 @@
+@use "../../global" as g;
+
+/*!
+page > error > error
+------------------------------
+*/
+.error-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.error-text {
+  @include g.mq() {
+    text-align: center;
+  }
+}

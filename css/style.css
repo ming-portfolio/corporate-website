@@ -326,9 +326,6 @@ component > title
   align-items: baseline;
 }
 
-.c-title--contact {
-  gap: 8rem;
-}
 @media screen and (min-width: 768px) {
   .c-title--contact {
     gap: 18rem;
@@ -465,16 +462,6 @@ component > title
 component > button
 ------------------------------
 */
-.c-button {
-  order: 3;
-  align-self: flex-end;
-}
-@media screen and (min-width: 768px) {
-  .c-button {
-    align-self: auto;
-  }
-}
-
 .c-button-link {
   background-color: var(--bg-lightest-blue);
   padding: 16rem 24rem;
@@ -526,7 +513,7 @@ component > button
   .c-button-submit:hover {
     background-color: var(--bg-white);
     color: var(--bg-primary);
-    outline: 1px solid var(--bg-primary);
+    outline: 1rem solid var(--bg-primary);
   }
 }
 
@@ -748,7 +735,7 @@ component > page-kv
   }
 }
 
-.c-page-kv-image--product {
+.c-page-kv-image--post {
   border: 1rem solid var(--sep-lightgrey);
 }
 
@@ -897,7 +884,7 @@ component > post-product
 ------------------------------
 */
 @media screen and (min-width: 768px) and (any-hover: hover) {
-  .c-post-product a:hover img {
+  .c-post-product-link:hover img {
     scale: 1.02;
   }
 }
@@ -1029,7 +1016,7 @@ component > posts-news
   gap: 20rem;
   border-top: 1rem solid var(--sep-lightgrey);
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .c-posts-news {
     padding-top: 31rem;
     gap: 31rem;
@@ -1044,7 +1031,7 @@ component > post-news
   border-bottom: 1rem solid var(--sep-lightgrey);
   padding-bottom: 19rem;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .c-post-news {
     padding-bottom: 31rem;
   }
@@ -1056,7 +1043,7 @@ component > post-news
   gap: 8rem;
   padding: 0 16rem;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .c-post-news-info {
     display: grid;
     align-items: center;
@@ -1125,8 +1112,8 @@ component > form-text
   opacity: 0.6;
 }
 
-.c-form-text:focus {
-  border: 1px solid var(--color-focus);
+.c-form-text:focus:focus {
+  border: 1rem solid var(--color-focus);
 }
 
 .c-form-text--textarea {
@@ -1445,7 +1432,7 @@ layout > header
   .l-header-item-link--contact:hover {
     color: var(--bg-primary);
     background-color: var(--bg-white);
-    outline: 1px solid var(--bg-primary);
+    outline: 1rem solid var(--bg-primary);
     opacity: 1;
   }
 }
@@ -1519,14 +1506,18 @@ layout > header
 layout > footer
 ------------------------------
 */
-.l-footer {
+.l-footer-container {
+  background-color: var(--bg-lightest-blue);
+}
+
+.l-footer-wrapper {
   background-color: var(--bg-darkblue);
   padding: 80rem 0;
   border-radius: 30rem 30rem 0 0;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .l-footer {
+  .l-footer-wrapper {
     border-radius: 56rem 56rem 0 0;
   }
 }
@@ -1896,6 +1887,16 @@ page > top > top-news
     flex-direction: column;
     justify-content: space-between;
     gap: 50rem;
+  }
+}
+
+.top-news-button {
+  order: 3;
+  align-self: flex-end;
+}
+@media screen and (min-width: 768px) {
+  .top-news-button {
+    align-self: auto;
   }
 }
 
@@ -2963,6 +2964,21 @@ page > news > news-detail
 @media (any-hover: hover) {
   .news-detail-link:hover {
     opacity: 0.7;
+  }
+}
+
+/*!
+page > error > error
+------------------------------
+*/
+.error-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .error-text {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

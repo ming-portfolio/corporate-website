@@ -4,14 +4,12 @@
 component > post-product
 ------------------------------
 */
-.c-post-product {
+.c-post-product-link {
   @include g.mq() {
-    a {
-      @media (any-hover: hover) {
-        &:hover {
-          img {
-            scale: 1.02;
-          }
+    @media (any-hover: hover) {
+      &:hover {
+        img {
+          scale: 1.02;
         }
       }
     }

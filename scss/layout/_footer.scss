@@ -4,7 +4,11 @@
 layout > footer
 ------------------------------
 */
-.l-footer {
+.l-footer-container {
+  background-color: var(--bg-lightest-blue);
+}
+
+.l-footer-wrapper {
   background-color: var(--bg-darkblue);
   padding: 80rem 0;
   border-radius: 30rem 30rem 0 0;
@@ -27,7 +31,7 @@ layout > footer
 
   @media (any-hover: hover) {
     &:hover {
-      translate: -50% -60%; // -65%だと少し浮きすぎるかもしれないので微調整
+      translate: -50% -60%;
     }
   }
 }
@@ -53,12 +57,6 @@ layout > footer
     gap: 121rem;
     text-align-last: left;
   }
-}
-
-.l-footer-info {
-}
-
-.l-container {
 }
 
 .l-footer-logo {
@@ -139,9 +137,6 @@ layout > footer
   @include g.mq() {
     margin-bottom: 24rem;
   }
-}
-
-.l-footer-list02 {
 }
 
 .l-footer-business-detail {

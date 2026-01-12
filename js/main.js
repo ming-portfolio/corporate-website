@@ -626,7 +626,6 @@ const initializeProductImage = () => {
       arrows: false,
       isNavigation: true,
       drag: false,
-      focus: 0,
 
       breakpoints: {
         767: {

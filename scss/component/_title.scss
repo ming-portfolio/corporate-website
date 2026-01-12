@@ -16,8 +16,6 @@ component > title
 }
 
 .c-title--contact {
-  gap: 8rem;
-
   @include g.mq() {
     gap: 18rem;
   }
@@ -69,6 +67,7 @@ component > title
   }
 }
 
+// 下層ページKVタイトル
 .c-page-title-en {
   font-size: 50rem;
   line-height: 1.15;
@@ -89,7 +88,7 @@ component > title
   }
 }
 
-// 日本語と英語が横並び
+// 日本語と英語が横並び（下層ページKVタイトル）
 .c-page-title-row {
   display: flex;
   flex-direction: row;
