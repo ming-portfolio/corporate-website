@@ -9,6 +9,7 @@ Hello Mentor の教材をもとに、Web 制作の基礎力向上を目的とし
 ## 使用技術
 
 - HTML5
+- SCSS
 - CSS3
 - JavaScript
 
