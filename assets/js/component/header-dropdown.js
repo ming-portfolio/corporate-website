@@ -19,7 +19,7 @@ export const initializeHeaderDropdown = () => {
     };
 
     const options = {
-      duration: 300,
+      duration: 150,
       easing: "ease-out",
     };
 

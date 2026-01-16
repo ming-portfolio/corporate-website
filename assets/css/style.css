@@ -328,7 +328,7 @@ component > title
 }
 
 @media screen and (min-width: 768px) {
-  .c-title--contact {
+  .c-title--cta {
     gap: 18rem;
   }
 }
@@ -349,11 +349,11 @@ component > title
   color: var(--text-white);
 }
 
-.c-title-en--contact {
+.c-title-en--cta {
   font-size: 32rem;
 }
 @media screen and (min-width: 768px) {
-  .c-title-en--contact {
+  .c-title-en--cta {
     font-size: 40rem;
   }
 }
@@ -1018,17 +1018,7 @@ component > posts-news
 ------------------------------
 */
 .c-posts-news {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20rem;
-  gap: 20rem;
   border-top: 1rem solid var(--sep-lightgrey);
-}
-@media screen and (min-width: 768px) {
-  .c-posts-news {
-    padding-top: 31rem;
-    gap: 31rem;
-  }
 }
 
 /*!
@@ -1037,12 +1027,6 @@ component > post-news
 */
 .c-post-news {
   border-bottom: 1rem solid var(--sep-lightgrey);
-  padding-bottom: 19rem;
-}
-@media screen and (min-width: 768px) {
-  .c-post-news {
-    padding-bottom: 31rem;
-  }
 }
 
 .c-post-news-info {
@@ -1063,16 +1047,18 @@ component > post-news
 .c-post-news-link {
   display: block;
   transition: 0.3s;
+  padding-block: 20rem 19rem;
 }
 @media screen and (min-width: 768px) {
   .c-post-news-link {
     display: inline-block;
+    padding-block: 32rem 31rem;
   }
 }
 @media (any-hover: hover) {
   .c-post-news-link:hover {
     color: var(--bg-primary);
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
@@ -1451,8 +1437,6 @@ layout > header
   .l-header-business-detail {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    transition-delay: 0.2s;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -1915,6 +1899,13 @@ page > top > top-business
 */
 .top-business {
   position: relative;
+  overflow: hidden;
+  padding-bottom: 80rem;
+}
+@media screen and (min-width: 768px) {
+  .top-business {
+    padding-bottom: 144rem;
+  }
 }
 
 .top-business-inner {
@@ -1969,31 +1960,22 @@ page > top > top-business
 
 .top-business-list {
   margin-top: 47rem;
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
   border-top: 1rem solid var(--sep-lightgrey);
-  border-bottom: 1rem solid var(--sep-lightgrey);
-  padding-top: 20rem;
 }
 @media screen and (min-width: 768px) {
   .top-business-list {
     margin-top: 56rem;
-    gap: 24rem;
-    padding-top: 24rem;
   }
 }
 
 .top-business-item {
   border-bottom: 1rem solid var(--sep-lightgrey);
-  padding: 0 16rem 15rem 16rem;
   font-size: 18rem;
   line-height: 1.45;
   letter-spacing: 0.05em;
 }
 @media screen and (min-width: 768px) {
   .top-business-item {
-    padding: 0 16rem 23rem 16rem;
     font-size: 20rem;
   }
 }
@@ -2003,6 +1985,7 @@ page > top > top-business
   justify-content: space-between;
   align-items: center;
   gap: 16rem;
+  padding: 20rem 16rem 15rem 16rem;
   transition: transform 0.3s ease;
 }
 .top-business-item-link::after {
@@ -2016,6 +1999,11 @@ page > top > top-business
   background-position: center;
   transition: transform 0.3s ease;
 }
+@media screen and (min-width: 768px) {
+  .top-business-item-link {
+    padding: 24rem 16rem 23rem 16rem;
+  }
+}
 @media screen and (min-width: 768px) and (any-hover: hover) {
   .top-business-item-link:hover {
     opacity: 0.8;
@@ -2027,16 +2015,16 @@ page > top > top-business
 
 .top-business-background {
   position: absolute;
-  bottom: -11%;
-  left: 22%;
+  bottom: -2%;
+  left: 25%;
   width: 287rem;
   height: 81rem;
   z-index: var(--z-index-background);
 }
 @media screen and (min-width: 768px) {
   .top-business-background {
-    bottom: -50%;
-    left: 45%;
+    bottom: -19%;
+    left: 46%;
     width: 785rem;
     height: 278rem;
   }
@@ -2047,7 +2035,6 @@ page > top > top-product
 ------------------------------
 */
 .top-product {
-  margin-top: 80rem;
   background-image: url("/assets/img/top/product/product-background-sp.png");
   background-size: cover;
   background-position: center;
@@ -2058,7 +2045,6 @@ page > top > top-product
 @media screen and (min-width: 768px) {
   .top-product {
     background-image: url("/assets/img/top/product/product-background-pc.png");
-    margin-top: 144rem;
     height: 900rem;
     padding: 88rem 0 88rem 70rem;
   }

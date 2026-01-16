@@ -303,8 +303,6 @@ layout > header
   @include g.mq() {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    transition-delay: 0.2s;
     position: absolute;
     top: 100%;
     left: 50%;
