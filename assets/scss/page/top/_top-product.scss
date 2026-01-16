@@ -5,7 +5,7 @@ page > top > top-product
 ------------------------------
 */
 .top-product {
-  background-image: url("/assets/img/top/product/product-background-sp.png");
+  background-image: url("../img/top/product/product-background-sp.png");
   background-size: cover;
   background-position: center;
   padding: 88rem 0 88rem 20rem;
@@ -13,7 +13,7 @@ page > top > top-product
   height: 923rem;
 
   @include g.mq() {
-    background-image: url("/assets/img/top/product/product-background-pc.png");
+    background-image: url("../img/top/product/product-background-pc.png");
     height: 900rem;
     padding: 88rem 0 88rem 70rem;
   }
@@ -42,11 +42,11 @@ page > top > top-product
     }
 
     &--prev {
-      background-image: url("/assets/img/top/product/product-arrow-left.svg");
+      background-image: url("../img/top/product/product-arrow-left.svg");
     }
 
     &--next {
-      background-image: url("/assets/img/top/product/product-arrow-right.svg");
+      background-image: url("../img/top/product/product-arrow-right.svg");
     }
   }
 }
@@ -145,7 +145,7 @@ page > top > top-product
   &::after {
     content: "";
     display: block;
-    background-image: url("/assets/img/common/button-arrow-white.svg");
+    background-image: url("../img/common/button-arrow-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

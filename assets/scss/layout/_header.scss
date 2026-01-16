@@ -254,7 +254,7 @@ layout > header
     @include g.mq() {
       content: "";
       display: block;
-      background-image: url("/assets/img/layout/header/header-business-arrow.svg");
+      background-image: url("../img/layout/header/header-business-arrow.svg");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -267,7 +267,7 @@ layout > header
 .l-header-item-link--business--black {
   &::after {
     @include g.mq() {
-      background-image: url("/assets/img/layout/header/header-business-arrow-black.svg");
+      background-image: url("../img/layout/header/header-business-arrow-black.svg");
     }
   }
 }
@@ -353,7 +353,7 @@ layout > header
     display: block;
     width: 9rem;
     height: 9rem;
-    background-image: url("/assets/img/common//button-arrow-white.svg");
+    background-image: url("../img/common//button-arrow-white.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

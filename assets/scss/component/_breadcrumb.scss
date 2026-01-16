@@ -33,7 +33,7 @@ component > breadcrumb
   &::after {
     content: "";
     display: block;
-    background-image: url("/assets/img/common/button-arrow-blue.svg");
+    background-image: url("../img/common/button-arrow-blue.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
