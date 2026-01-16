@@ -21,4 +21,4 @@ Hello Mentor の教材をもとに、Web 制作の基礎力向上を目的とし
 
 ## URL
 
-https://github.com/a-sekiya/ming-portfolio.github.io.git
+https://github.com/a-sekiya/corporate-website.git
