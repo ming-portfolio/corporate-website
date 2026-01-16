@@ -21,7 +21,7 @@ Hello Mentor の教材をもとに、Web 制作の基礎力向上を目的とし
 
 ## ブランチ構成について
 
-- main ブランチ：WordPress 化を想定したディレクトリ構成・パス指定
+- main ブランチ：WordPress 化を想定したパス指定
 - gh-pages ブランチ：GitHub Pages での公開を想定し、相対パスに調整
 
 ## URL
