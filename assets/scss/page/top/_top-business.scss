@@ -7,6 +7,12 @@ page > top > top-business
 
 .top-business {
   position: relative;
+  overflow: hidden;
+  padding-bottom: 80rem;
+
+  @include g.mq() {
+    padding-bottom: 144rem;
+  }
 }
 
 .top-business-inner {
@@ -55,29 +61,20 @@ page > top > top-business
 
 .top-business-list {
   margin-top: 47rem;
-  display: flex;
-  flex-direction: column;
-  gap: 20rem;
   border-top: 1rem solid var(--sep-lightgrey);
-  border-bottom: 1rem solid var(--sep-lightgrey);
-  padding-top: 20rem;
 
   @include g.mq() {
     margin-top: 56rem;
-    gap: 24rem;
-    padding-top: 24rem;
   }
 }
 
 .top-business-item {
   border-bottom: 1rem solid var(--sep-lightgrey);
-  padding: 0 16rem 15rem 16rem;
   font-size: 18rem;
   line-height: 1.45;
   letter-spacing: 0.05em;
 
   @include g.mq() {
-    padding: 0 16rem 23rem 16rem;
     font-size: 20rem;
   }
 }
@@ -87,6 +84,7 @@ page > top > top-business
   justify-content: space-between;
   align-items: center;
   gap: 16rem;
+  padding: 20rem 16rem 15rem 16rem;
   transition: transform 0.3s ease;
 
   &::after {
@@ -102,6 +100,8 @@ page > top > top-business
   }
 
   @include g.mq() {
+    padding: 24rem 16rem 23rem 16rem;
+
     @media (any-hover: hover) {
       &:hover {
         opacity: 0.8;
@@ -115,15 +115,15 @@ page > top > top-business
 
 .top-business-background {
   position: absolute;
-  bottom: -11%;
-  left: 22%;
+  bottom: -2%;
+  left: 25%;
   width: 287rem;
   height: 81rem;
   z-index: var(--z-index-background);
 
   @include g.mq() {
-    bottom: -50%;
-    left: 45%;
+    bottom: -19%;
+    left: 46%;
     width: 785rem;
     height: 278rem;
   }

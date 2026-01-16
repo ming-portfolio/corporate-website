@@ -7,11 +7,6 @@ component > post-news
 
 .c-post-news {
   border-bottom: 1rem solid var(--sep-lightgrey);
-  padding-bottom: 19rem;
-
-  @include g.mq() {
-    padding-bottom: 31rem;
-  }
 }
 
 .c-post-news-info {
@@ -31,15 +26,17 @@ component > post-news
 .c-post-news-link {
   display: block;
   transition: 0.3s;
+  padding-block: 20rem 19rem;
 
   @include g.mq() {
     display: inline-block;
+    padding-block: 32rem 31rem;
   }
 
   @media (any-hover: hover) {
     &:hover {
       color: var(--bg-primary);
-      opacity: 0.8;
+      opacity: 0.7;
     }
   }
 }
